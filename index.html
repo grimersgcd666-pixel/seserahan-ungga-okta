@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#d85a87">
+<meta name="description" content="Checklist seserahan pernikahan Oenggahan Iyyakahaque & Oktarina.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>OENGGAHAN IYYAKAHAQUE & OKTARINA</title>
+<style>
+:root{
+  --pink:#d85a87;--pink2:#ef8fb0;--deep:#8f3158;--rose:#fff1f6;
+  --cream:#fffafc;--gold:#c79a54;--gold2:#e6c78f;--ink:#422b35;
+  --muted:#8b717c;--line:#f0dce5;--white:#fff;--green:#4f9271;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;background:linear-gradient(145deg,#fff5f8 0%,#fdf8fa 45%,#fff 100%);
+ color:var(--ink);font:14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+body:before{content:"";position:fixed;inset:-30%;pointer-events:none;opacity:.35;
+ background:radial-gradient(circle at 20% 15%,#ffd5e4 0,transparent 25%),
+ radial-gradient(circle at 85% 30%,#f6d7df 0,transparent 23%);z-index:-1}
+.app{max-width:760px;margin:auto;min-height:100vh;padding-bottom:24px}
+.hero{
+ position:relative;overflow:hidden;text-align:center;padding:34px 20px 28px;
+ background:linear-gradient(145deg,#fff7fa,#ffe8f1 58%,#f9d8e4);
+ border-bottom:1px solid #efc8d6;box-shadow:0 10px 35px #a62f5c12;
+}
+.hero:after{content:"";position:absolute;width:190px;height:190px;border:1px solid #d49aab55;border-radius:50%;
+ right:-70px;top:-80px;box-shadow:0 0 0 22px #ffffff20,0 0 0 44px #ffffff15}
+.spark{font-size:12px;letter-spacing:3px;color:var(--gold);font-weight:800}
+.monogram{width:62px;height:62px;margin:0 auto 12px;border-radius:50%;
+ display:grid;place-items:center;background:linear-gradient(145deg,#fff,#ffe3ed);
+ border:1px solid #e0b06d;box-shadow:0 7px 20px #8f315822;color:var(--deep);
+ font:700 20px Georgia,serif}
+.names{font:clamp(25px,7vw,38px) Georgia,serif;line-height:1.13;color:var(--deep);margin:11px 0 9px}
+.amp{display:inline-block;color:var(--gold);font-size:.7em;margin:3px 0}
+.dates{font-size:11px;color:var(--muted);letter-spacing:.3px;line-height:1.8}
+.luxe-line{display:flex;align-items:center;gap:10px;justify-content:center;margin-top:15px;color:var(--gold)}
+.luxe-line:before,.luxe-line:after{content:"";height:1px;width:52px;background:linear-gradient(90deg,transparent,var(--gold))}
+.luxe-line:after{background:linear-gradient(90deg,var(--gold),transparent)}
+
+.panel{margin:15px;border:1px solid var(--line);background:#ffffffd9;border-radius:22px;
+ box-shadow:0 12px 35px #8f31580d;backdrop-filter:blur(8px)}
+.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;padding:14px}
+.card{position:relative;text-align:center;padding:13px 7px;border-radius:16px;
+ background:linear-gradient(145deg,#fff,#fff4f8);border:1px solid #f0d8e2}
+.card .ico{font-size:18px;display:block;margin-bottom:4px}
+.num{font-weight:800;font-size:21px;color:var(--deep)}
+.lab{font-size:9px;color:var(--muted);letter-spacing:1px;font-weight:800}
+.progress-wrap{padding:0 16px 15px}
+.progress-label{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-bottom:6px}
+.track{height:10px;background:#f5e4eb;border-radius:99px;overflow:hidden}
+.bar{height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,var(--pink),#e9a0b9,var(--gold));transition:width .3s}
+.controls{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:0 15px 15px}
+.btn{border:1px solid #eccbd8;background:#fff7fa;color:var(--deep);padding:11px 6px;border-radius:12px;
+ font-size:11px;font-weight:800;cursor:pointer;box-shadow:0 3px 10px #8f31580a}
+.btn:active{transform:scale(.98)}
+.primary{background:linear-gradient(135deg,var(--pink),var(--deep));color:#fff;border-color:transparent}
+.gold{background:linear-gradient(135deg,#fff9ed,#f7e8c9);color:#805d27;border-color:#e8c98e}
+.install{display:none!important}.install.show{display:block!important}
+
+.section{margin:0 15px 13px;border:1px solid var(--line);border-radius:19px;overflow:hidden;background:#fff;
+ box-shadow:0 7px 22px #8f315808}
+.head{padding:14px 14px;display:flex;align-items:center;gap:10px;justify-content:space-between;
+ background:linear-gradient(90deg,#fff0f5,#fffafd);border-bottom:1px solid var(--line)}
+.cat-title{display:flex;align-items:center;gap:10px;min-width:0}
+.cat-icon{width:36px;height:36px;display:grid;place-items:center;border-radius:12px;
+ background:linear-gradient(145deg,#fff,#ffe3ed);font-size:18px;border:1px solid #f1d2dd}
+.cat-name{font-weight:800;color:var(--deep);font-size:13px}
+.count{font-size:10px;color:var(--muted);white-space:nowrap;background:#fff;border:1px solid var(--line);
+ padding:5px 8px;border-radius:99px}
+.item{display:grid;grid-template-columns:auto 1fr 105px;align-items:center;gap:10px;padding:11px 12px;
+ border-top:1px solid #f6e9ee;font-size:13px;transition:.2s}
+.item:first-of-type{border-top:0}
+.item.done{background:#fff9fb}
+.item.done .item-name{text-decoration:line-through;color:#ad9aa2}
+.item input[type=checkbox]{width:21px;height:21px;margin:0;accent-color:var(--pink)}
+.item-name{font-weight:600}
+.price{width:100%;padding:8px;border:1px solid #ead8df;background:#fff;border-radius:9px;
+ color:var(--ink);font-size:11px;text-align:right;outline:none}
+.price:focus,.note:focus{border-color:var(--pink);box-shadow:0 0 0 3px #d85a8714}
+
+.bottom{padding:16px}
+.money{display:flex;justify-content:space-between;gap:12px;padding:8px 2px;color:var(--muted);font-size:12px}
+.money b{color:var(--deep);font-size:15px}
+.note-title{display:flex;align-items:center;gap:7px;font-weight:800;color:var(--deep);font-size:12px;margin:12px 0 7px}
+.note{width:100%;height:85px;resize:vertical;border:1px solid #ead8df;border-radius:12px;padding:10px;
+ font:12px system-ui;background:#fff;outline:none}
+footer{text-align:center;padding:16px 15px 26px;color:#aa8996;font:11px Georgia,serif;letter-spacing:1px}
+footer span{color:var(--gold)}
+
+@media(max-width:560px){
+ .controls{grid-template-columns:repeat(2,1fr)}
+ .item{grid-template-columns:auto 1fr}
+ .price{grid-column:2}
+ .hero{padding-top:28px}
+}
+@media(min-width:700px){.app{padding-top:18px}.hero{border-radius:24px}}
+@media print{
+ body{background:#fff}.app{max-width:none}.hero,.panel,.section{box-shadow:none}
+ .controls{display:none}.section{break-inside:avoid}.panel{border-color:#ddd}
+}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hero">
+  <div class="monogram">O &amp; O</div>
+  <div class="spark">✦ SESERAHAN PERNIKAHAN ✦</div>
+  <div class="names">OENGGAHAN IYYAKAHAQUE<br><span class="amp">♡ &amp; ♡</span><br>OKTARINA</div>
+  <div class="dates">Tanggal Pernikahan: __________________<br>Tanggal Seserahan: __________________</div>
+  <div class="luxe-line">✧</div>
+</header>
+
+<section class="panel">
+  <div class="summary">
+    <div class="card"><span class="ico">✓</span><div class="num" id="done">0</div><div class="lab">SUDAH</div></div>
+    <div class="card"><span class="ico">♡</span><div class="num" id="left">0</div><div class="lab">BELUM</div></div>
+    <div class="card"><span class="ico">✦</span><div class="num" id="pct">0%</div><div class="lab">PROGRES</div></div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-label"><span>Progress seserahan</span><b id="progressText">0%</b></div>
+    <div class="track"><div class="bar" id="bar"></div></div>
+  </div>
+  <div class="controls">
+    <button class="btn primary" onclick="all(true)">✓ Semua</button>
+    <button class="btn" onclick="all(false)">↺ Reset</button>
+    <button class="btn gold" onclick="backup()">⇩ Backup</button>
+    <button class="btn" onclick="document.getElementById('restore').click()">⇧ Restore</button>
+    <button class="btn install" id="install">＋ Install Aplikasi</button>
+    <button class="btn" onclick="window.print()">♧ Cetak</button>
+    <input id="restore" type="file" accept=".json" hidden onchange="restore(event)">
+  </div>
+</section>
+
+<div id="list"></div>
+
+<section class="panel bottom">
+  <div class="money"><span>♡ Total Anggaran</span><b id="total">Rp0</b></div>
+  <div class="money"><span>✓ Harga yang dicentang</span><b id="spent">Rp0</b></div>
+  <div class="note-title">✎ Catatan Belanja</div>
+  <textarea id="note" class="note" placeholder="Tulis ukuran, warna, toko, catatan khusus, atau kebutuhan lainnya..."></textarea>
+</section>
+
+<footer>OENGGAHAN IYYAKAHAQUE <span>♡</span> OKTARINA</footer>
+</div>
+
+<script>
+const groups=[
+["01","Perlengkapan Ibadah","🕌",["Mukena","Sajadah","Al-Qur'an","Tasbih","Buku doa"]],
+["02","Pakaian","👗",["Baju / dress","Kebaya / pakaian acara","Hijab","Inner hijab","Piyama","Pakaian dalam","Set pakaian tambahan"]],
+["03","Tas & Alas Kaki","👠",["Tas","Sepatu","Sandal","Dompet / card holder"]],
+["04","Skincare & Body Care","🧴",["Skincare","Body lotion","Body wash","Body scrub","Shampoo","Conditioner","Hair care","Deodorant","Parfum"]],
+["05","Makeup","💄",["Cushion / foundation","Bedak","Lip product","Blush","Mascara","Eyeliner","Pensil alis","Makeup remover","Beauty tools"]],
+["06","Perhiasan","💍",["Cincin","Gelang","Kalung","Anting"]],
+["07","Keperluan Wanita","🎀",["Handuk","Cermin kecil","Sisir","Hair accessories","Pouch","Body mist"]],
+["08","Makanan & Buah","🍓",["Kue tradisional","Kue kering","Cokelat","Buah-buahan","Makanan kesukaan","Minuman / makanan lainnya"]],
+["09","Mahar & Akad","💒",["Mahar / uang mahar","Cincin pernikahan","Al-Qur'an / perlengkapan simbolis","Keperluan akad lainnya"]],
+["10","Tambahan","🎁",["Jam tangan","Kacamata","Buku","Barang kesukaan","Barang kenang-kenangan","Lainnya"]]
+];
+const KEY="seserahan-oenggahan-oktarina-pwa";
+let S=JSON.parse(localStorage.getItem(KEY)||"{}");
+function ids(){let a=[],n=0;groups.forEach(g=>g[3].forEach(()=>a.push("i"+n++)));return a}
+function money(n){return new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(n)}
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+function save(){localStorage.setItem(KEY,JSON.stringify(S));update()}
+function render(){
+ let h="",n=0;
+ groups.forEach(g=>{
+  h+=`<section class="section"><div class="head"><div class="cat-title"><div class="cat-icon">${g[2]}</div><div class="cat-name">${g[0]} — ${g[1]}</div></div><span class="count" id="c${g[0]}">0/${g[3].length}</span></div>`;
+  g[3].forEach(x=>{
+   let id="i"+n++,v=S[id]||{};
+   h+=`<label class="item ${v.done?"done":""}" id="r${id}"><input type="checkbox" ${v.done?"checked":""} onchange="toggle('${id}',this.checked)"><span class="item-name">${esc(x)}</span><input class="price" type="number" inputmode="numeric" placeholder="Rp" value="${v.price||""}" onchange="setprice('${id}',this.value)"></label>`;
+  });
+  h+="</section>";
+ });
+ document.getElementById("list").innerHTML=h;
+ document.getElementById("note").value=S.note||"";
+ document.getElementById("note").oninput=e=>{S.note=e.target.value;localStorage.setItem(KEY,JSON.stringify(S))};
+ update();
+}
+function toggle(id,v){S[id]=S[id]||{};S[id].done=v;save();document.getElementById("r"+id).classList.toggle("done",v)}
+function setprice(id,v){S[id]=S[id]||{};S[id].price=+v||0;save()}
+function all(v){ids().forEach(id=>{S[id]=S[id]||{};S[id].done=v});save();render()}
+function update(){
+ let a=ids(),d=a.filter(id=>S[id]?.done).length,p=a.length?Math.round(d/a.length*100):0,t=0,sp=0;
+ a.forEach(id=>{let x=+S[id]?.price||0;t+=x;if(S[id]?.done)sp+=x});
+ document.getElementById("done").textContent=d;
+ document.getElementById("left").textContent=a.length-d;
+ document.getElementById("pct").textContent=p+"%";
+ document.getElementById("progressText").textContent=p+"%";
+ document.getElementById("bar").style.width=p+"%";
+ document.getElementById("total").textContent=money(t);
+ document.getElementById("spent").textContent=money(sp);
+ let n=0;
+ groups.forEach(g=>{let d=0;g[3].forEach(()=>{if(S["i"+n]?.done)d++;n++});document.getElementById("c"+g[0]).textContent=d+"/"+g[3].length})
+}
+function backup(){
+ let b=new Blob([JSON.stringify(S)],{type:"application/json"}),a=document.createElement("a");
+ a.href=URL.createObjectURL(b);a.download="backup-seserahan-oenggahan-oktarina.json";a.click();URL.revokeObjectURL(a.href)
+}
+function restore(e){
+ let f=e.target.files[0];if(!f)return;
+ let r=new FileReader();r.onload=()=>{try{S=JSON.parse(r.result);save();render();alert("Backup berhasil dipulihkan.")}catch{alert("File backup tidak valid.")}};
+ r.readAsText(f);e.target.value=""
+}
+let deferred;
+addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferred=e;document.getElementById("install").classList.add("show")});
+document.getElementById("install").onclick=async()=>{
+ if(deferred){deferred.prompt();await deferred.userChoice;deferred=null;document.getElementById("install").classList.remove("show")}
+};
+if("serviceWorker"in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+render();
+</script>
+</body>
+</html>

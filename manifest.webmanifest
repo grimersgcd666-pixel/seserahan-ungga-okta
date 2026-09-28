@@ -1,0 +1,19 @@
+{
+  "name": "OENGGAHAN IYYAKAHAQUE & OKTARINA",
+  "short_name": "Seserahan O&O",
+  "description": "Checklist seserahan pernikahan Oenggahan Iyyakahaque & Oktarina.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffafc",
+  "theme_color": "#d85a87",
+  "lang": "id-ID",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
